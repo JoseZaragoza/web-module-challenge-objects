@@ -54,7 +54,14 @@ const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  
+  discount: function(string) {
+    if(string === 'teacher'){
+      this.price = 13.5;
+    } if(string === 'public'){
+      this.price = 16.2;
+    }
+    return burger.price;
+  }
 }
 
 
