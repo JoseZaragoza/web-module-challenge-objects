@@ -15,8 +15,13 @@ The function should:
   Example createMenuItem('tacos', 8, 'Lunch') should return {name: 'tacos', price: 8, category: 'Lunch'}
 */
 
-function createMenuItem(/*Your code here*/){
-    /*Your code here*/
+function createMenuItem(val1, val2, val3){
+    let menu = {
+      name: val1,
+      price: val2,
+      category: val3
+    }
+    return menu
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1b: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -29,7 +34,9 @@ Test your createMenuItems function by doing the following:
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */
 
-
+console.log(createMenuItem('bagel', 4, 'Breakfast'));
+console.log(createMenuItem('steak', 15, 'Dinner'));
+console.log(createMenuItem('fries', 3, 'Sides'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 You're having a lunch special! 25% off for teachers and students, 10% off for everyone else. Add a method to the 
